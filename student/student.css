@@ -2,9 +2,8 @@
 {
   float: left;
   width: 25ex;
-  margin: 2ex 0;
   background: #072046;
-  min-height: 100%;
+  height: 100%;
 }
 
 #content
@@ -150,14 +149,14 @@ a img
   margin-left: 18px;
   font: normal 2.3ex/1.5 sans-serif;
   min-height: 100%;
-  height:100%;
+  height: 100%;
   background: #FFFFFF url(//fedoraproject.org/static/images/border-right.png) 100% 0 repeat-y;
   padding-right: 18px;
 }
 
 #head
 {
-  border-top: 10px solid #337ACC;
+  border-top: 10px solid #072046;;
   padding: 1ex 2ex 17px;
   background: #FFFFFF url(//fedoraproject.org/static/images/line.png) 0 100% repeat-x;
 }
@@ -166,7 +165,7 @@ a img
 {
   display: block;
   text-indent: -9999px;
-  background: url(//fedoraproject.org/static/images/fedora-logo.png) 20px 50% no-repeat;
+  background: url(IC_logo_resized.png) 100% 50% no-repeat;
   height: 73px;
   width: 175px;
   overflow: hidden;
@@ -221,7 +220,6 @@ a img
   text-align: center;
   background: #FFFFFF url(//fedoraproject.org/static/images/line-bottom.png) 0 0 repeat-x;
   margin: -90px 0 0;
-  border-bottom: 10px solid #337ACC;
   height: 80px;
   color: #AAAAAA;
 }
