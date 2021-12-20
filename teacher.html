@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>Instituto de Computação</title>
+    <style type="text/css" media="screen">
+      @import url("student.css");
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="head">
+        <img src="IC_logo_resized.png" alt="">
+      </div>
+      <div id="sidebar">
+        <div class="nav">
+          <h2>Professor</h2>
+          <ul>
+            <a onclick="openOption('Home')"><li>Home</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div id="Home" class="menu-option">
+        <table>
+          <tr>
+            <td>
+                <img height="250" src="prof.png">
+                <p>
+                  <b>Professor Fulano da Silva<br >(fulano.silva@ic.ufrj.br)</b>
+                </p>
+            </td>
+            <td style="margin-top: 0ex;">
+              <h3>Minhas Pesquisas</h3>
+              <p>
+                Grupo:    Computação de Alto Desempenho<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/6802619437371670">http://dgp.cnpq.br/dgp/espelhogrupo/6802619437371670</a>
+              </p>
+              <p>
+                Grupo:    GINAPE<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/6034970085282181 ">http://dgp.cnpq.br/dgp/espelhogrupo/6034970085282181 </a>
+              </p>
+                Grupo:    Grafos de Interseçao: propriedades estruturais e algoritmos<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/6216138361183832 ">http://dgp.cnpq.br/dgp/espelhogrupo/6216138361183832 </a>
+              </p>
+              <p>
+                Grupo:    GRECO - Grupo Engenharia do Conhecimento<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/5892456665488475 ">http://dgp.cnpq.br/dgp/espelhogrupo/5892456665488475 </a>
+              </p>
+              <p>
+                Grupo:    Grupo de pesquisa em ensino de Computação<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/0906661714008222 ">http://dgp.cnpq.br/dgp/espelhogrupo/0906661714008222 </a>
+              </p>
+              <p>
+                Grupo:    Grupo de Pesquisa em Interação com Informação<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/4662646153645037 ">http://dgp.cnpq.br/dgp/espelhogrupo/4662646153645037 </a>
+              </p>
+              <p>
+                Grupo:    Inteligência, Robótica e Sistemas Bio-inspirados<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/2437866008928142 ">http://dgp.cnpq.br/dgp/espelhogrupo/2437866008928142 </a>
+              </p>
+              <p>
+                Grupo:    Laboratório CORES - Laboratório de Computação Social e Análise de Redes Sociais<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/6544106757329607 ">http://dgp.cnpq.br/dgp/espelhogrupo/6544106757329607 </a>
+              </p>
+              <p>
+                Grupo:    MASI - Modelos e Arquiteturas para Sistemas Inteligentes<br >
+                Link:    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/3566213798711528">http://dgp.cnpq.br/dgp/espelhogrupo/3566213798711528</a>
+              </p>
+              <h3>Minhas Iniciações Cietíficas (IC)</h3>
+              <p>
+                <b>- Grupo de Pesquisa</b><br>
+              </p>
+
+              <h3>Meu Projeto de Extensão</h3>
+              <p>
+                <b>- Projeto</b><br>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      function openOption(optionName) {
+        var i;
+        var x = document.getElementsByClassName("menu-option");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(optionName).style.display = "block";
+      }
+      </script>
+  </body>
+</html>
