@@ -27,7 +27,7 @@ ul{
     color: white;
 }
 
-#top-top-nav p{
+#top-top-nav li{
     float: right;
     margin: 0 10%;
     padding: 1.3% 0;
@@ -48,6 +48,7 @@ ul{
 #top-nav img{
     float: left;
     margin: 0.9% auto;
+    height: auto;
 }
 
 #top-nav h1{
@@ -55,10 +56,11 @@ ul{
     margin-right: 10%;
     margin-left: 1%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 165%;
 }
 
 #top-nav p{
-    font-size: 1em;
+    font-size: 110%;
 }
 
 #top-nav li{
@@ -68,7 +70,7 @@ ul{
 }
 
 #cover {
-    background-image: url("main/background.jpg");
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-position-x: right;
     background-color:#072046;
