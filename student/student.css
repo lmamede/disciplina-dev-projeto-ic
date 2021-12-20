@@ -6,27 +6,33 @@
   height: 100%;
 }
 
-#content
+#Home
 {
   margin-left: 25ex!important;
+  width:80%;
 }
 
-#content ul
+#Home ul
 {
   list-style: square;
   margin: 1ex 3ex;
   line-height: 1;
 }
 
-#content table
+#Home table
 {
   border-collapse: collapse;
 }
 
-#content th, #content td
+#Home th, #Home td
 {
   border: 1px solid #DDDDDD;
   padding: 0.5ex 2ex;
+}
+
+table td, table td * 
+{
+  vertical-align: top;
 }
 
 .nav
@@ -55,7 +61,7 @@
 
 .nav li
 {
-    background-color: #729FCF;/*#777777;*/
+    background-color: #285c97;/*#285c97;*/
     margin: 0.2ex 0;
     height: 5%;
     width: 100%;
@@ -82,7 +88,7 @@
     border-left: 5px solid #CCCCCC;
 }
 
-#content h3
+#Home h3
 {
   margin: 0!important;
 }
@@ -180,7 +186,7 @@ a img
 
 }
 
-#content
+#Home
 {
   margin: 0 2ex;
   padding: 1ex 1ex 120px;
@@ -188,31 +194,31 @@ a img
   background: #FFFFFF;
 }
 
-#content h2
+#Home h2
 {
   font-size: 3.25ex;
 }
 
-#content h2 div {
+#Home h2 div {
   font-size: 1ex;
   font-weight: normal;
 }
 
-#content h3
+#Home h3
 {
   color: #337acc;
   margin: 1.5ex 0;
   font-size: 2.5ex;
 }
 
-#content p
+#Home p
 {
   margin: 1ex 5ex 1ex 0;
 }
 
 
 
-#content a
+#Home a
 {
   color: #337ACC;
 }

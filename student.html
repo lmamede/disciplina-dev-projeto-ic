@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Fedora People</title>
+    <title>Instituto de Computação</title>
     <style type="text/css" media="screen">
       @import url("student/student.css");
     </style>
@@ -17,56 +17,77 @@
         <div class="nav">
           <h2>Aluno</h2>
           <ul>
-            <a href="http://roma.fedorapeople.org/"><li>Home</li></a>
-            <a href="http://roma.fedorapeople.org/srpms/"><li>Packages</li></a>
-            <a href="http://roma.fedorapeople.org/videos/"><li>Videos</li></a>
-            <a href="http://roma.fedorapeople.org/misc/"><li>Misc</li></a>
+            <a onclick="openOption('Home')"><li>Home</li></a>
+            <a onclick="openOption('Grade')"><li>Grade<br >Curricular</li></a>
+            <a onclick="openOption('Email')"><li>Cadastro de<br >E-mail Institucional</li></a>
+            <a onclick="openOption('Atividades')"><li>Atividades<br > Inscritas</li></a>
           </ul>
         </div>
       </div>
 
-      <div id="content">
-        <h2>roma @ FedoraPeople.org</h2>
-        <p>
-          For general information about me, please visit
-          <a href="http://orion.lcg.ufrj.br/roma/">my home page</a>.
-        </p>
+      <div id="Home" class="menu-option">
+        <table>
+          <tr>
+            <td style="margin-top: 0ex;">
+              <h3>Ofertas de Estágio</h3>
+              <p>
+                Como se inscrever?<br ><br >
 
-        <div id="materials">
-          <h3>Packages</h3>
-          <p>
-            Some packages -&gt;
-            <a href="http://orion.lcg.ufrj.br/RPMS/">here</a>
-          </p>
+                Acesse o formulário de inscrição e preencha o formulário durante o período de inscrição indicado: 
+                <a href="https://goo.gl/forms/qmiKnIbPDuVw4hRv1">https://goo.gl/forms/qmiKnIbPDuVw4hRv1</a><br >
+                Envie para estagio@dcc.ufrj.br seu boletim atual.
+              </p>
 
-          <h3>Bugzilla</h3>
-          <p>
-            Bugzilla (<strong>UPDATED 2010-02-15</strong>):
-            <a href="https://bugzilla.redhat.com/frontpage.cgi">My Bugzilla</a>
-            front page
-          </p>
-        </div>
+              <h3>Ofertas de Iniciação Cietífica (IC)</h3>
+              <p>
+                <b>- Grupo de Pesquisa em Interação com Informação<br >- Professora Adriana Santarosa Vivacqua (avivacqua@ic.ufrj.br )</b><br>
+                Link: <a href="http://dgp.cnpq.br/dgp/espelhogrupo/4662646153645037">http://dgp.cnpq.br/dgp/espelhogrupo/4662646153645037</a>
+              </p>
+
+              <h3>Ofertas de Extensão</h3>
+              <p>
+                <b>- Projeto Caronaê<br >- Professora Maria Luiza (mluiza@ppgi.ufrj.br)</b><br>
+                O projeto é originalmente voltado para organizações e comunidades que concentram muitos deslocamentos pendulares automotivos, em uma base diária e/ou temporária, e que identifiquem a necessidade de sistematizar caronas. Ao longo dos anos em que o projeto está ativo na UFRJ, mais de 70.000 caronas foram registradas desde o início de operaçao do aplicativo em 2016, uma media de quase 20.000 caronas por ano envolvendo membros da comunidade acadêmica UFRJ. Com o sistema do aplicativo transformado para código aberto, possibilitando replicação em outras instituições interessadas pelo Brasil, e expandiu-se para um projeto voltado para o estudo da mobilidade a partir dos dados coletados.
+              </p>
+            </td>
+
+            <td>
+              <img src="student/llab2.jpg">
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="Grade" class="menu-option" style="display: none">
+        <base href="https://dcc.ufrj.br/ensino/graduacao/disciplinas-computacao-2" />
+        <iframe src="/componentes/public/index.php/disciplinas/quadro" width="980" height="800" frameborder="0"> 
+        </iframe>
+      </div>
+
+      <div id="Email" class="menu-option" style="display: none">
+        <base href="https://dcc.ufrj.br/usuario/cadastro-aluno-bcc" />
+        <iframe src="/ldapuser/" width="100%" height="1300" frameborder="0"> 
+        </iframe>
+      </div>
+  
+      <div id="Atividades" class="menu-option" style="display: none">
+  
       </div>
     </div>
 
     <div id="bottom">
       <div id="footer">
-        <p class="disclaimer">
-          The Fedora Project is maintained and driven by the community and
-          sponsored by Red Hat. This is a community maintained site. Red Hat is
-          not responsible for content.
-        </p>
-        <ul>
-          <li class="first">
-            <a href="http://fedoraproject.org/wiki/Legal">Legal</a>
-          </li>
-          <li>
-            <a href="http://fedoraproject.org/wiki/Legal/TrademarkGuidelines">
-              Trademark Guidelines
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
+    <script>
+      function openOption(optionName) {
+        var i;
+        var x = document.getElementsByClassName("menu-option");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(optionName).style.display = "block";
+      }
+      </script>
   </body>
 </html>
