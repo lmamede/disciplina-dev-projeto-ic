@@ -98,49 +98,6 @@ table td, table td *
   float: right;
 }
 
-.pkglist
-{
-  border: 1px solid #CCCCCC;
-  width: 100%;
-  margin: 1.5ex 0;
-  text-align: center;
-}
-
-.pkglist th, .pkglist td
-{
-  border: none!important;
-}
-
-.pkglist table th, .pkglist table td
-{
-  border: 1px solid #CCCCCC;
-}
-
-.actions
-{
-  list-style: none;
-  line-height: 1;
-  margin: 1ex 0!important;
-}
-
-.actions li
-{
-  display: inline;
-  margin-right: 1ex;
-}
-
-a.bodhi
-{
-  padding-left: 20px;
-  background: url(../images/bodhi.png) 0 50% no-repeat;
-}
-
-a.koji
-{
-  padding-left: 20px;
-  background: url(../images/koji.png) 0 50% no-repeat;
-}
-
 *
 {
   margin: 0;
@@ -152,12 +109,6 @@ html, body
   height: 100%;
 }
 
-body
-{
-  height: 100%;
-  background: #FFFFFF url(//fedoraproject.org/static/images/border-left.png) 0 0 repeat-y;
-}
-
 a img
 {
   border: none;
@@ -167,6 +118,8 @@ a img
 {
   min-height: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #head
@@ -216,66 +169,12 @@ a img
   margin: 1ex 5ex 1ex 0;
 }
 
-
-
 #Home a
 {
   color: #337ACC;
 }
 
-#footer
-{
-  position: relative;
-  font: normal 1.5ex/1.5 sans-serif;
-  clear: both;
-  text-align: center;
-  background: #FFFFFF url(//fedoraproject.org/static/images/line-bottom.png) 0 0 repeat-x;
-  margin: -90px 0 0;
-  height: 80px;
-  color: #AAAAAA;
-}
-
-#footer ul
-{
-  list-style: none;
-}
-
-#footer li
-{
-  display: inline;
-  border-left: 1px solid #AAAAAA;
-  padding: 0 0.75ex;
-  margin-left: -1px;
-}
-
-#footer li.first
-{
-  border-left: none;
-}
-
-#footer a
-{
-  color: #223344;
-}
-
-#footer a:hover
-{
-  color: #112233;
-}
-
-#footer .copy
-{
-  padding-top: 3ex;
-}
-
-.ToolTip {
-  display: block;
-  position: absolute;
-  border: 1px solid black;
-  background-color: lightyellow;
-  width: 200px;
-}
-
-.invisible {
-  display: none;
+#email-student{
+  max-height: 800px;
+  width: 80%;
 }

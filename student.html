@@ -13,6 +13,7 @@
       <div id="head">
         <img src="student/IC_logo_resized.png" alt="">
       </div>
+      
       <div id="sidebar">
         <div class="nav">
           <h2>Aluno</h2>
@@ -65,20 +66,14 @@
       </div>
 
       <div id="Email" class="menu-option" style="display: none">
-        <base href="https://dcc.ufrj.br/usuario/cadastro-aluno-bcc" />
-        <iframe src="/ldapuser/" width="100%" height="1300" frameborder="0"> 
-        </iframe>
+        <base id="email-register" href="https://dcc.ufrj.br/usuario/cadastro-aluno-bcc" />
+        <iframe id="email-student" src="/ldapuser/" width="980" height="800" frameborder="0"></iframe>
       </div>
   
       <div id="Atividades" class="menu-option" style="display: none">
-  
       </div>
     </div>
 
-    <div id="bottom">
-      <div id="footer">
-      </div>
-    </div>
     <script>
       function openOption(optionName) {
         var i;
@@ -88,6 +83,6 @@
         }
         document.getElementById(optionName).style.display = "block";
       }
-      </script>
+    </script>
   </body>
 </html>
